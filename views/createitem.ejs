@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            
+            <li class="nav-item ">
+                <a class="nav-link" href="/admindashboard">Back</a>
+            </li>
+        
+            </ul>
+        </div>
+    </nav>
+
+    <form style=" background-color: #eee; padding:5%; border-radius:5px;" method="POST">
+        <div style="width: 100%;justify-content: center; align-items: center; text-align: center;"><h1>Add New Products</h1></div>
+       <div class="form-group">
+               <label for="pname">Item Name</label>
+               <input type="text" class="form-control" id="pname" aria-describedby="emailHelp" placeholder="Enter item name" name="pname" required>
+           </div>
+           <div class="form-group">
+               <label for="itemcategory">Item Category</label>
+               <input type="text" class="form-control" id="itemcategory" aria-describedby="emailHelp" placeholder="Enter item category" name="itemcategory" required>
+           </div>
+           <div class="row">
+               <div class="col">
+                   <label for="quantity">Item Quantity</label>
+                   <input type="text" class="form-control" id="quantity" aria-describedby="emailHelp" placeholder="Enter quantity"  name="quantity" required>
+               </div>
+               <div class="col">
+                   <label for="pprice">Item Price</label>
+                   <input type="number" class="form-control" id="pprice" aria-describedby="emailHelp" placeholder="Enter price"  name="pprice" required>
+               </div>
+           </div>
+           <!-- Allows user to create account (username, password, first name,
+       last name, contact number, email) -->
+            <br>
+           <button type="submit" class="btn btn-primary w-100">Add A Product</button>
+             </form>
+</body>
+
