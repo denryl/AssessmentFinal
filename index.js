@@ -116,8 +116,6 @@ app.all("/createitem",(req,res)=>{
 
 app.all("/edititem/:id",(req,res)=>{
     if (req.method=="POST"){
- 
- 
     var params=req.body;
     var id_param=req.params;
     var session= req.session
@@ -147,9 +145,7 @@ app.all("/edititem/:id",(req,res)=>{
         }else{
             res.redirect("/admindashboard")
         }
- 
-}
- 
+    }
 })
 
 app.get("/admindashboard",(req,res)=>{
